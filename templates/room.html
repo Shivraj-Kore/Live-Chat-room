@@ -7,6 +7,15 @@ body {
   margin: 0 auto;
   max-width: 800px;
   padding: 0 20px;
+  background: linear-gradient(#e66465, #9198e5);
+  background-repeat: no-repeat;
+  height: 100%;
+
+}
+
+body h1{
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -56,7 +65,7 @@ body {
 </head>
 <body>
 
-<h2>{{room}} - DjChat</h2>
+<h1>Room: {{room}}</h1>
 
 <div id="display">
 
@@ -101,7 +110,7 @@ setInterval(function(){
 
     input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #0007FF;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -109,10 +118,10 @@ setInterval(function(){
     border-radius: 4px;
     cursor: pointer;
     }
-
+{% comment %} 
     input[type=submit]:hover {
-    background-color: #45a049;
-    }
+    background-color: #0007FF;
+    } {% endcomment %}
 
     div {
     border-radius: 5px;
